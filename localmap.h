@@ -17,6 +17,7 @@
 #define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHINTBITS		(8*sizeof(HASHINT))
 #define HASHLEVELS	8
+#define MAXHASH		((((HASHINT)1)<<HASHINTBITS)-1)
 
 void TestHash();
 
