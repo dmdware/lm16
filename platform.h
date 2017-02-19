@@ -1,21 +1,6 @@
 
 
 
-/*******************************************************
- * Copyright (C) 2015 DMD 'Ware <dmdware@gmail.com>
- *
- * This file is part of States, Firms, & Households.
- *
- * You are entitled to use this source code to learn.
- *
- * You are not entitled to duplicate or copy this source code
- * into your own projects, commercial or personal, UNLESS you
- * give credit.
- *
- *******************************************************/
-
-
-
 
 #ifndef PLATFORM_H
 #define PLATFORM_H
@@ -217,6 +202,6 @@ typedef unsigned char byte;
 #endif
 
 #define TITLE	"localmap"
-#define APPVERSION	14
+#define APPVERSION	16
 
 #endif // #define LIBRARY_H
