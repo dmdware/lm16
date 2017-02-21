@@ -40,6 +40,11 @@ struct Mask
 	HASHINT maskup[HASHLEVELBITS/HASHINTBITS];
 };
 
+class Tried
+{
+public:
+};
+
 inline bool Ahead(HASHINT current[HASHLEVELS][HASHLEVELBITS/HASHINTBITS], 
 				  HASHINT test[HASHLEVELS][HASHLEVELBITS/HASHINTBITS])
 {
@@ -65,7 +70,11 @@ bool Down(std::list<Mask>* masksup,
 		  HASHINT in[HASHLEVELBITS/HASHINTBITS],
 		  bool lowlim, 
 		  HASHINT upin[HASHLEVELBITS/HASHINTBITS], 
-		  HASHINT upinmask[HASHLEVELBITS/HASHINTBITS]);
+		  HASHINT upinmask[HASHLEVELBITS/HASHINTBITS], 
+		  HASHADDR nmc,
+		  std::list<Tried>* tried,
+		  HASHADDR downmci,
+		  std::list<Tried>* wtried);
 void Up(HASHINT in[HASHLEVELBITS/HASHINTBITS], HASHINT* inval, HASHINT* inmask);
 void TestHash();
 void Hash(HASHINT *m, HASHINT *i, HASHINT *o, HASHADDR nbits, HASHADDR boff);
