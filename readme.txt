@@ -67,3 +67,4 @@ With 20 levels, there is a reach of 2^20 bits apart. The amount to mix
 using pyramid is: level?(level*2):1, that is if level==0 then 1, otherwise 
 2*level.
 
+EDIT: Took some of the multiple-mappings/channels of lm15/...13.cpp
