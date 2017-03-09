@@ -45,6 +45,24 @@ class Tried
 public:
 };
 
+inline bool Ahead2(HASHINT current[HASHLEVELBITS/HASHINTBITS], 
+				  HASHINT test[HASHLEVELBITS/HASHINTBITS])
+{
+	//for(SHASHADDR i=(HASHLEVELS-1); i>=0; --i)
+	//for(uint8_t i=0; i&31; ++i)
+	{	
+		for(SHASHADDR j=HASHLEVELBITS/HASHINTBITS-1; j>=0; --j)
+		{
+			if(test[j] > current[j])
+				return true;
+			if(test[j] < current[j])
+				return false;
+		}
+	}
+
+	return false;
+}
+
 inline bool Ahead(HASHINT current[HASHLEVELS][HASHLEVELBITS/HASHINTBITS], 
 				  HASHINT test[HASHLEVELS][HASHLEVELBITS/HASHINTBITS])
 {
@@ -67,10 +85,10 @@ bool Down(std::list<Mask>* masksup,
 		  HASHINT mval[HASHLEVELS][HASHLEVELBITS/HASHINTBITS], 
 		  HASHINT* maskup, 
 		  HASHADDR level, 
-		  HASHINT in[HASHLEVELBITS/HASHINTBITS],
+		  HASHINT in[HASHVALS][HASHLEVELBITS/HASHINTBITS],
 		  bool lowlim, 
-		  HASHINT upin[HASHLEVELBITS/HASHINTBITS], 
-		  HASHINT upinmask[HASHLEVELBITS/HASHINTBITS], 
+		  HASHINT upin[HASHVALS][HASHLEVELBITS/HASHINTBITS], 
+		  HASHINT upinmask[HASHVALS][HASHLEVELBITS/HASHINTBITS], 
 		  HASHADDR nmc,
 		  std::list<Tried>* tried,
 		  HASHADDR downmci,
