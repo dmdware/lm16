@@ -10,19 +10,20 @@
 #define LOWEST0(x)			((~x) & (x + 1))
 #define LOWEST1(x)			(x & ((~x) + 1))
 
-#define HASHINT		unsigned __int64
+#define HASHINT		unsigned __int8
 #define HASHADDR	unsigned int
 #define SHASHADDR	signed int
 #define LOG2HASHBITS	2	//(log2(HASHINTBITS))
-#define HASHINTBITS		64
+//#define HASHINTBITS		64
+#define HASHINTBITS		8
 #define MAXHASH		((((HASHINT)1)<<HASHINTBITS)-1)
 #define HASHCROP(x)	((x)&(MAXHASH))
 #define HASHROTL(x,n)	HASHCROP((x<<n)|(x>>(HASHINTBITS-n)))
 #define HASHROTR(x,n)	HASHCROP((x>>n)|(x<<(HASHINTBITS-n)))
 #define FITRESX		64
 #define FITRESY		48
-//#define HASHLEVELBITS	8	
-#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
+#define HASHLEVELBITS	8	
+//#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
 #define HASHVALS		1
