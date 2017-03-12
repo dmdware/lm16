@@ -26,7 +26,7 @@
 //#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
-#define HASHVALS		2
+#define HASHVALS		10
 
 /*
 what's the least possible mask you could have (greater than x) if you had to get this output, given any input?
