@@ -70,9 +70,3 @@ lev5 m3177 continue mci0 mask51 lm2472 mum51, muum255, mui229,, mm247, mi248
 lev5 m3177 continue mci0 mask51 lm2787 mum51, muum255, mui228,, mm251, mi249
 lev5 m3177 continue mci0 mask51 lm2952 mum51, muum255, mui225,, mm251, mi248
 lev5 m3177 continue mci0 mask51 lm3177 mum51, muum255, mui224,, mm255, mi249
-lev5 m3177 continue mci0 mask51 lm3312 mum51, muum255, mui222,, mm255, mi248
-lev5 m3177 continue mci0 mask51 lm3753 mum51, muum255, mui220,, mm243, mi246
-lev5 m3177 continue mci0 mask51 lm3984 mum51, muum255, mui218,, mm243, mi244
-lev5 m3177 continue mci0 mask51 lm4299 mum51, muum255, mui216,, mm247, mi246
-lev5 m3177 continue mci0 mask51 lm4464 mum51, muum255, mui214,, mm247, mi244
-lev5 m3177 continue mci0 mask51 lm4779 mum51, muum255, mui212,, mm251, mi246
