@@ -1,5 +1,6 @@
 lev7 m1 continue mci0 mask0 lm0 mum0, muum-1, mui0,, mm-1, mi-1
 lev7 m1 continue mci1 mask0 lm0 mum0, muum-1, mui1,, mm-1, mi-1
+f! am255 bm255
 nmc-1
 lev6 m49 continue mci0 mask255 lm0 mum255, muum0, mui204,, mm-1, mi-1
 lev6 m49 continue mci0 mask255 lm441 mum255, muum0, mui200,, mm255, mi207
@@ -58,8 +59,8 @@ lev6 m7 continue mci1 mask255 lm324 mum255, muum0, mui13,, mm250, mi47
 lev6 m7 continue mci1 mask255 lm405 mum255, muum0, mui7,, mm242, mi15
 lev6 m7 continue mci1 mask255 lm486 mum255, muum0, mui5,, mm248, mi15
 nmc-1
-fail gives 109->255 (correct: 0)
-fail gives 209->255 (correct: 1)
+fail gives 196->255 (correct: 0)
+fail gives 94->255 (correct: 1)
 answer:
 nor
 	 wmask[0] = 1244636
