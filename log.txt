@@ -71,5 +71,3 @@ low 0
 lev5 m3177 continue mci0 mask51 lm0 mum51, muum255, mui252,, mm-1, mi-1
 lev5 m3177 continue mci0 mask51 lm441 mum51, muum255, mui248,, mm243, mi252
 lev5 m3177 continue mci0 mask51 lm756 mum51, muum255, mui244,, mm247, mi252
-lev5 m3177 continue mci0 mask51 lm1071 mum51, muum255, mui240,, mm251, mi252
-lev5 m3177 continue mci0 mask51 lm1296 mum51, muum255, mui237,, mm255, mi252
