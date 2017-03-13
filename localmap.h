@@ -38,8 +38,8 @@ struct Mask
 {
 	HASHINT mask[HASHLEVELBITS/HASHINTBITS];
 	HASHINT ovaldown[HASHLEVELBITS/HASHINTBITS];
-	HASHINT maskup[HASHLEVELBITS/HASHINTBITS];
-	//Mask* maskup;
+	//HASHINT maskup[HASHLEVELBITS/HASHINTBITS];
+	Mask* maskup;
 };
 
 class Tried
