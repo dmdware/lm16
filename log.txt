@@ -1,7 +1,5 @@
 lev7 m1 continue mci0 mask0 lm0 mum0, muum-1, mui0,, mm-1, mi-1
-tb49
 lev7 m1 continue mci1 mask0 lm0 mum0, muum-1, mui1,, mm-1, mi-1
-tb63
 nmc-1
 lev6 m49 continue mci0 mask255 lm0 mum255, muum0, mui204,, mm-1, mi-1
 lev6 m49 continue mci0 mask255 lm441 mum255, muum0, mui200,, mm255, mi207
@@ -52,47 +50,23 @@ lev6 m49 continue mci0 mask255 lm2853 mum255, muum0, mui3,, mm251, mi15
 lev6 m49 continue mci0 mask255 lm2934 mum255, muum0, mui2,, mm252, mi15
 lev6 m49 continue mci0 mask255 lm3015 mum255, muum0, mui1,, mm253, mi15
 lev6 m49 continue mci0 mask255 lm3096 mum255, muum0, mui0,, mm254, mi15
-tb3177
-lev6 m49 continue mci1 mask255 lm0 mum255, muum0, mui141,, mm-1, mi-1
-lev6 m49 continue mci1 mask255 lm189 mum255, muum0, mui133,, mm250, mi143
-lev6 m49 continue mci1 mask255 lm270 mum255, muum0, mui39,, mm122, mi15
-lev6 m49 continue mci1 mask255 lm324 mum255, muum0, mui37,, mm250, mi47
-lev6 m49 continue mci1 mask255 lm324 mum255, muum0, mui13,, mm250, mi47
-lev6 m49 continue mci1 mask255 lm405 mum255, muum0, mui7,, mm242, mi15
-lev6 m49 continue mci1 mask255 lm486 mum255, muum0, mui5,, mm248, mi15
-tb567
+lev6 m7 continue mci1 mask255 lm0 mum255, muum0, mui141,, mm-1, mi-1
+lev6 m7 continue mci1 mask255 lm189 mum255, muum0, mui133,, mm250, mi143
+lev6 m7 continue mci1 mask255 lm270 mum255, muum0, mui39,, mm122, mi15
+lev6 m7 continue mci1 mask255 lm324 mum255, muum0, mui37,, mm250, mi47
+lev6 m7 continue mci1 mask255 lm324 mum255, muum0, mui13,, mm250, mi47
+lev6 m7 continue mci1 mask255 lm405 mum255, muum0, mui7,, mm242, mi15
+lev6 m7 continue mci1 mask255 lm486 mum255, muum0, mui5,, mm248, mi15
 nmc-1
-lev5 m3177 continue mci0 mask51 lm0 mum51, muum255, mui252,, mm-1, mi-1
-lev5 m3177 continue mci0 mask51 lm441 mum51, muum255, mui248,, mm243, mi252
-lev5 m3177 continue mci0 mask51 lm756 mum51, muum255, mui244,, mm247, mi252
-lev5 m3177 continue mci0 mask51 lm1071 mum51, muum255, mui240,, mm251, mi252
-lev5 m3177 continue mci0 mask51 lm1296 mum51, muum255, mui237,, mm255, mi252
-lev5 m3177 continue mci0 mask51 lm1737 mum51, muum255, mui236,, mm243, mi249
-lev5 m3177 continue mci0 mask51 lm1968 mum51, muum255, mui233,, mm243, mi248
-lev5 m3177 continue mci0 mask51 lm2283 mum51, muum255, mui232,, mm247, mi249
-lev5 m3177 continue mci0 mask51 lm2472 mum51, muum255, mui229,, mm247, mi248
-lev5 m3177 continue mci0 mask51 lm2787 mum51, muum255, mui228,, mm251, mi249
-lev5 m3177 continue mci0 mask51 lm2952 mum51, muum255, mui225,, mm251, mi248
-lev5 m3177 continue mci0 mask51 lm3177 mum51, muum255, mui224,, mm255, mi249
-lev5 m3177 continue mci0 mask51 lm3312 mum51, muum255, mui222,, mm255, mi248
-lev5 m3177 continue mci0 mask51 lm3753 mum51, muum255, mui220,, mm243, mi246
-lev5 m3177 continue mci0 mask51 lm3984 mum51, muum255, mui218,, mm243, mi244
-lev5 m3177 continue mci0 mask51 lm4299 mum51, muum255, mui216,, mm247, mi246
-lev5 m3177 continue mci0 mask51 lm4464 mum51, muum255, mui214,, mm247, mi244
-lev5 m3177 continue mci0 mask51 lm4779 mum51, muum255, mui212,, mm251, mi246
-lev5 m3177 continue mci0 mask51 lm4968 mum51, muum255, mui210,, mm251, mi244
-lev5 m3177 continue mci0 mask51 lm5193 mum51, muum255, mui208,, mm255, mi246
-lev5 m3177 continue mci0 mask51 lm5328 mum51, muum255, mui207,, mm255, mi244
-lev5 m3177 continue mci0 mask51 lm5769 mum51, muum255, mui206,, mm243, mi243
-lev5 m3177 continue mci0 mask51 lm6000 mum51, muum255, mui205,, mm243, mi242
-lev5 m3177 continue mci0 mask51 lm6231 mum51, muum255, mui204,, mm243, mi241
-lev5 m3177 continue mci0 mask51 lm6352 mum51, muum255, mui203,, mm243, mi240
-lev5 m3177 continue mci0 mask51 lm6667 mum51, muum255, mui202,, mm247, mi243
-lev5 m3177 continue mci0 mask51 lm6856 mum51, muum255, mui201,, mm247, mi242
-lev5 m3177 continue mci0 mask51 lm7021 mum51, muum255, mui200,, mm247, mi241
-lev5 m3177 continue mci0 mask51 lm7120 mum51, muum255, mui199,, mm247, mi240
-lev5 m3177 continue mci0 mask51 lm7435 mum51, muum255, mui198,, mm251, mi243
-lev5 m3177 continue mci0 mask51 lm7600 mum51, muum255, mui197,, mm251, mi242
-lev5 m3177 continue mci0 mask51 lm7789 mum51, muum255, mui196,, mm251, mi241
-lev5 m3177 continue mci0 mask51 lm7888 mum51, muum255, mui195,, mm251, mi240
-lev5 m3177 continue mci0 mask51 lm8113 mum51, muum255, mui194,, mm255, mi243
+fail gives 109->255 (correct: 0)
+fail gives 209->255 (correct: 1)
+answer:
+nor
+	 wmask[0] = 1244636
+	 wmask[1] = 1244637
+	 wmask[2] = 1244638
+	 wmask[3] = 1244639
+	 wmask[4] = 1244640
+	 wmask[5] = 1244641
+	 wmask[6] = 1244642
+	 wmask[7] = 1244643
