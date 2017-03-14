@@ -68,3 +68,7 @@ using pyramid is: level?(level*2):1, that is if level==0 then 1, otherwise
 2*level.
 
 EDIT: Took some of the multiple-mappings/channels of lm15/...13.cpp
+
+EDIT: Try editing HASHOP1 and HASHOP2 to NAND-NOR, NOR-NAND, NOR-NOR etc.
+Either way it seems it's not possible to map 20 inputs to outputs (HASHVALS)
+with 8 bits wide.

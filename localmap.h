@@ -26,7 +26,10 @@
 //#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
-#define HASHVALS		2
+#define HASHVALS		4
+
+#define HASHOP1			|
+#define HASHOP2			|
 
 /*
 what's the least possible mask you could have (greater than x) if you had to get this output, given any input?
@@ -58,6 +61,27 @@ inline bool Ahead2(HASHINT current[HASHLEVELBITS/HASHINTBITS],
 			if(test[j] > current[j])
 				return true;
 			if(test[j] < current[j])
+				return false;
+		}
+	}
+
+	return false;
+}
+
+inline bool Ahead3(HASHINT current[HASHLEVELBITS/HASHINTBITS], 
+				  HASHINT test[HASHLEVELBITS/HASHINTBITS],
+				  HASHINT set[HASHLEVELBITS/HASHINTBITS])
+{
+	//for(SHASHADDR i=(HASHLEVELS-1); i>=0; --i)
+	//for(uint8_t i=0; i&31; ++i)
+	{	
+		for(SHASHADDR j=HASHLEVELBITS/HASHINTBITS-1; j>=0; --j)
+		{
+			if(!set[j])
+				continue;
+			if(test[j]&set[j] > current[j]&set[j])
+				return true;
+			if(test[j]&set[j] < current[j]&set[j])
 				return false;
 		}
 	}
