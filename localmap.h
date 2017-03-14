@@ -30,6 +30,7 @@
 
 #define HASHOP1			|
 #define HASHOP2			|
+#define HASHOP3			~
 
 /*
 what's the least possible mask you could have (greater than x) if you had to get this output, given any input?
