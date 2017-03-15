@@ -22,17 +22,17 @@
 #define HASHROTR(x,n)	HASHCROP((x>>n)|(x<<(HASHINTBITS-n)))
 #define FITRESX		64
 #define FITRESY		48
-#define HASHLEVELBITS	16	
+#define HASHLEVELBITS	8	
 //#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
-#define HASHVALS		200
+#define HASHVALS		14
 
 #define HASHOP1			|
 #define HASHOP2			&
 #define HASHOP3			~
 
-#define SPARSITY		2
+#define SPARSITY		1
 
 /*
 what's the least possible mask you could have (greater than x) if you had to get this output, given any input?
@@ -82,9 +82,9 @@ inline bool Ahead3(HASHINT current[HASHLEVELBITS/HASHINTBITS],
 		{
 			if(!set[j])
 				continue;
-			if(test[j]&set[j] > current[j]&set[j])
+			if((test[j]&set[j]) > (current[j]&set[j]))
 				return true;
-			if(test[j]&set[j] < current[j]&set[j])
+			if((test[j]&set[j]) < (current[j]&set[j]))
 				return false;
 		}
 	}
