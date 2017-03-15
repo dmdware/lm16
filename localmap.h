@@ -22,15 +22,17 @@
 #define HASHROTR(x,n)	HASHCROP((x>>n)|(x<<(HASHINTBITS-n)))
 #define FITRESX		64
 #define FITRESY		48
-#define HASHLEVELBITS	8	
+#define HASHLEVELBITS	16	
 //#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
-#define HASHVALS		4
+#define HASHVALS		200
 
 #define HASHOP1			|
-#define HASHOP2			|
+#define HASHOP2			&
 #define HASHOP3			~
+
+#define SPARSITY		2
 
 /*
 what's the least possible mask you could have (greater than x) if you had to get this output, given any input?
@@ -126,5 +128,11 @@ void Hash(HASHINT *m, HASHINT *i, HASHINT *o, HASHADDR nbits, HASHADDR boff);
 //HASHINT Hash(HASHINT mval[HASHLEVELS][HASHLEVELBITS/HASHINTBITS], 
 //			 HASHINT oval[HASHLEVELBITS/HASHINTBITS], 
 //			 HASHADDR level);
+
+
+void Sparsify(HASHINT from[HASHLEVELBITS/HASHINTBITS/SPARSITY],
+			  HASHINT to[HASHLEVELBITS/HASHINTBITS]);
+void Unsparsify(HASHINT from[HASHLEVELBITS/HASHINTBITS],
+			  HASHINT to[HASHLEVELBITS/HASHINTBITS/SPARSITY]);
 
 #endif
