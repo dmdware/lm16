@@ -72,3 +72,8 @@ EDIT: Took some of the multiple-mappings/channels of lm15/...13.cpp
 EDIT: Try editing HASHOP1 and HASHOP2 to NAND-NOR, NOR-NAND, NOR-NOR etc.
 Either way it seems it's not possible to map 20 inputs to outputs (HASHVALS)
 with 8 bits wide.
+
+EDIT: "sparsity" of output bits (i.e., e.g., making each second bit not
+matter in output mappings, giving extra room to fill with any bit)
+might fix the issue, but for 8 bits of output it now requires a total
+of 16 bits, making it unbearably slow, taking >4 hours.

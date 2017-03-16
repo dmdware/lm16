@@ -26,7 +26,7 @@
 //#define HASHLEVELBITS	(FITRESX*FITRESY*3*8)
 #define HASHLEVELS			((8))
 
-#define HASHVALS		200
+#define HASHVALS		14
 
 #define HASHOP1			|
 #define HASHOP2			&
